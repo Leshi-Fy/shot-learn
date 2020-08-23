@@ -1,2 +1,2 @@
-# shot-learn
+# shot-learning
 something I am learning
