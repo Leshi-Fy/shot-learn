@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang='en'>
+    <head>
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width initial-scale=1.0'>
+        <title>
+            射击游戏
+        </title>
+        <link rel="stylesheet" href="/js/28、射击游戏/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="/JQ/jquery-1.12.4.min.js"></script>
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <div class="mainBox">
+
+            <!-- 顶部分数栏 -->
+            <div class="top">
+                <p class="score">Score:
+                    <span>0</span>
+                </p>
+                <p class="title">SHOT</p>
+            </div>
+            <!-- 底部规则栏 -->
+            <div class="bottom">
+                游戏规则
+            </div>
+            <!-- 开始按钮 -->
+            <button class="start">游戏开始</button>
+            <!-- 内部内容 -->
+            <div class="gameContent">
+                <div class="time">
+                    <span>时间条:</span>
+                    <div class="clockOutline">
+                        <div class="clock"></div>
+                        <div class="pause">
+                            点击暂停游戏
+                        </div>
+                    </div>
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    
+                </div>
+                <div class="target">
+                    <div class="target_far">
+                        <!-- <div class="true"></div>
+                        <div class="false"></div> -->
+                    </div>
+                    <div class="target_mid">
+                        <!-- <div class="true"></div>
+                        <div class="false"></div> -->
+                    </div>
+                    <div class="target_near">
+                        <!-- <div class="true"></div>
+                        <div class="false"></div> -->
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 规则界面 -->
+            <div class="rules">
+                <h1>游戏规则：</h1>
+                <p>玩家通过准新瞄准远处靶子</p>
+                <p>若击中远处圆形靶子，则加3分</p>
+                <p>若击中中间圆形靶子，则加2分</p>
+                <p>若击中近处圆形靶子，则加1分</p>
+                <p>若击中远处方形靶子，则减3分</p>
+                <p>若击中中间方形靶子，则减2分</p>
+                <p>若击中近处方形靶子，则减1分</p>
+                <button>关闭</button>
+            </div>
+            <!-- 游戏结束界面 -->
+            <div class="gameEnd">
+                <h1>游戏结束!</h1>
+                <h2 class="final_score">0</h2>
+                <button class="reStart">重新开始
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                </button>
+                <button class="Back">回到主界面
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                </button>
+            </div>
+            <!-- 暂停界面 -->
+            <div class="gamePause">
+                <h1>继续游戏!</h1>
+                <button class="reStart">继续
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                </button>
+                <button class="Back">回到主界面
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </body>
+</html>
